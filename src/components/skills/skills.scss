@@ -1,0 +1,57 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/resize.scss";
+
+.languages {
+    display: flex;
+    flex: 1;
+    flex-flow: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    ul {
+        flex: 1;
+        padding: 0 10px 0 10px;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+
+        .rank_container {
+            letter-spacing: 0px;
+            @include transition(letter-spacing, 0.2s, ease-in-out);
+        }
+
+        .skill_star {
+            color:#C7C9C9;
+            border-radius: 5px;
+        }
+        
+        .fill_skill_star{
+            color: #1C8683;
+        }
+
+        &:hover {
+            background-color: #E8E7E4;
+            cursor: default;
+        
+            .rank_container {
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .languages {
+        flex-flow: column;
+        margin: auto;
+        max-width: 500px;
+    }
+}
+
+@include mobile {
+    .languages {
+        flex-flow: column;
+    }
+}

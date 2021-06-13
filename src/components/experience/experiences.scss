@@ -1,0 +1,27 @@
+@import "../../styles/resize.scss";
+@import "../../styles/colors.scss";
+
+.exp_descript {
+	display: flex;
+	flex-flow: row;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.exp_descript h1, .loc_date_exp h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.loc_date_exp {
+	flex: 0.5;
+	flex-direction: column;
+}
+
+@include tablet {
+	.exp_descript { flex-flow: column; }
+}
+
+@include mobile {
+	.exp_descript { flex-flow: column; }
+}

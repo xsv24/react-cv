@@ -1,0 +1,56 @@
+@import "../../styles/colors.scss";
+@import "../../styles/resize.scss";
+
+$link-color: #cacaca;
+	
+footer {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	background-color: $backdrop-c;
+	padding: 18px;
+	margin-top: 50px;
+	
+	a {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+
+		font-style: normal;
+		font-size: 1.2rem;
+		font-weight: 600;
+		opacity: 0.8;
+		transition: opacity 0.3s ease-in-out;
+
+		svg {
+			fill: $link-c;
+			width: 54px;
+			height: 54px;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+		img {
+			padding-right: 15px;
+		}
+
+		span {
+			min-width: 110px;
+		}
+	}
+	
+}
+@include mobile {
+	footer {
+		margin: auto;
+		flex-flow: column;
+		align-items: stretch;
+
+		a {
+			margin: auto;
+			padding: 10px 0 10px 0;
+		}
+	}
+}

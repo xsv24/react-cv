@@ -1,0 +1,31 @@
+.visible {
+    text-align: left;
+    opacity: 1;
+    visibility: visible;
+    border-right: 13px solid #175783;
+    transition: opacity 1s ease-in-out 1s;
+    animation: cursor-blink 1s ease-in-out normal infinite;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    animation: trans-visible 1s ease-in-out normal;
+}
+
+@keyframes trans-visible {
+    from,
+    to      { opacity: 0; }
+    100%    { opacity: 1; }
+}
+
+@keyframes cursor-blink {
+    from,
+    to {
+        border-right-color: rgb(23, 87, 131);
+    }
+    100% {
+        border-right-color: rgba(23, 87, 131, 0.4);
+    }
+}

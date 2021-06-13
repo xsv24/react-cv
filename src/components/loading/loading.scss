@@ -1,0 +1,28 @@
+@import "../modal/simpleModal.scss";
+@import "../../styles/colors.scss";
+
+.loading-backdrop {
+    @extend .backdrop;
+
+    color: $white-c;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.4;
+    background-color: $backdrop-c;
+    transition: opacity 0.8s ease-in-out;
+
+    &.fade {
+        animation: fade 0.8s ease-in-out 2s forwards;
+    }
+
+    .loading-container {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+        text-align: center;
+    }
+}
