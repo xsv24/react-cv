@@ -2,14 +2,14 @@ import React from 'react';
 import config from './config';
 import { firebase } from './firebase';
 
-import Loading from './components/loading/loading';
+import Loading from './components/loading/Loading';
 import useRequest from './hooks/useRequest';
 
-import AboutComponent from './components/about/aboutComponent';
-import ShowcaseComponent from './components/showcase/showcaseComponent';
-import FooterComponent from './components/footer/footerComponent';
-import SkillsComponent from './components/skills/skillsComponent';
-import ExperienceComponent from './components/experience/experienceComponent';
+import AboutComponent from './components/about/About';
+import ShowcaseComponent from './components/showcase/Showcase';
+import FooterComponent from './components/footer/Footer';
+import SkillsComponent from './components/skills/Skills';
+import ExperienceComponent from './components/experience/Experience';
 
 import './styles/global.scss';
 

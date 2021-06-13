@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Modal from '../modal/simpleModal';
-import ExpItem from './experienceItem';
-import GoogleMap, { Marker } from '../googleMap/GoogleMap';
+import Modal from '../modal/Modal';
+import ExpItem from './ExperienceItem';
+import GoogleMap, { Marker } from '../google-maps/GoogleMap';
 
-const ExperienceComponent = ({ exps=[] }) => {
+const Experience = ({ exps=[] }) => {
 	const [
 		{ selectedCords, openMap }, 
 		setState
@@ -33,4 +33,4 @@ const ExperienceComponent = ({ exps=[] }) => {
 	);
 };
 
-export default ExperienceComponent;
+export default Experience;

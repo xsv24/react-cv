@@ -19,7 +19,7 @@ export const classnames = (...args) => {
     return classnames.join(' ');
 }
 
-export const times = (n, func) => {
+export const repeat = (n, func) => {
     const arr = [];
     for(let i=0; i < n; i++){
         arr.push(func(i));

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { times } from '../../utils';
+import { repeat } from '../../utils';
 
-const SkillItemComponent = ({ 
+const SkillItem = ({ 
 	name = "", 
 	level = 5, 
 	outof = 5, 
@@ -15,16 +15,16 @@ const SkillItemComponent = ({
 		<span>{name}</span>
 		<span className={rankContainer}>
 			<span className={achivedClass}>
-				{times(level, _ => icon)}
+				{repeat(level, _ => icon)}
 			</span>
 			<span className={toImproveClass}> 
-				{times(outof - level, _ => icon)}
+				{repeat(outof - level, _ => icon)}
 			</span>
 		</span>
 	</li>
 );
 
-SkillItemComponent.propTypes = {
+SkillItem.propTypes = {
 	achievedClass: PropTypes.string,
 	toImproveClass: PropTypes.string,
 	level: PropTypes.number,
@@ -35,4 +35,4 @@ SkillItemComponent.propTypes = {
 	])
 };
 
-export default SkillItemComponent;
+export default SkillItem;

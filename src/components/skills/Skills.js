@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SkillItemComponent from './skillItem';
+import SkillItemComponent from './SkillItem';
 import './skills.scss';
-import { times } from '../../utils';
+import { repeat } from '../../utils';
 
 function sortListLengths(skills, maxCols) {
 	if(!skills.length) return [];
 	
 	let arr = [...skills];
 
-	return times(
+	return repeat(
 		maxCols, _ => arr.splice(0,  Math.ceil(skills.length / maxCols))
 	);
 }
 
-const SkillsComponent = ({
+const Skills = ({
 	maxCols = 3,
 	skills = []
 }) => (
@@ -30,9 +30,9 @@ const SkillsComponent = ({
 	</div>
 );
 
-SkillsComponent.propTypes = {
+Skills.propTypes = {
 	maxCols: PropTypes.number,
 	skills: PropTypes.array.isRequired
 };
 
-export default SkillsComponent;
+export default Skills;

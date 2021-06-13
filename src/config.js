@@ -1,13 +1,15 @@
+const FIREBASE_PROJECT = `${process.env.REACT_APP_FIREBASE_PROJECT}`
+
 export default  {
     db: {
-        apiKey: "${process.env.FIREBASE_KEY}",
-        authDomain: "${process.env.FIREBASE_PROJECT}.firebaseapp.com",
-        databaseURL: "https://${process.env.FIREBASE_PROJECT}.firebaseio.com",
-        projectId: "${process.env.FIREBASE_PROJECT}",
-        storageBucket: "${process.env.FIREBASE_PROJECT}.appspot.com",
-        messagingSenderId: "${process.env.FIREBASE_SENDER_KEY}"
+        apiKey: `${process.env.REACT_APP_FIREBASE_KEY}`,
+        authDomain: `${FIREBASE_PROJECT}.firebaseapp.com`,
+        databaseURL: `https://${FIREBASE_PROJECT}.firebaseio.com`,
+        projectId: `${FIREBASE_PROJECT}`,
+        storageBucket: `${FIREBASE_PROJECT}.appspot.com`,
+        messagingSenderId: `${process.env.REACT_APP_FIREBASE_SENDER_KEY}`
     },
     map: {
-        apiKey: "${process.env.GOOGLE_MAPS_API}"
+        apiKey: `${process.env.REACT_APP_GOOGLE_MAPS_API}`
     }
 };

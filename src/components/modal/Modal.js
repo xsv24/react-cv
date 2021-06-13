@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react';
-import Portal from '../utils/portal';
+import Portal from '../utils/Portal';
 import { Transition } from 'react-transition-group';
 
-import './simpleModal.scss';
+import './modal.scss';
 
 export default class Modal extends Component{
 

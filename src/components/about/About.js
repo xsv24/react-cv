@@ -1,8 +1,8 @@
 import React from "react";
-import TerminalText from '../terminalText/terminal-text';
+import TerminalText from '../terminal-text/TerminalText';
 import "./about.scss";
 
-const AboutComponent = props => (
+const About = props => (
   <div className="container">
     <h1>Profile</h1>
     
@@ -46,4 +46,4 @@ const AboutComponent = props => (
   </div>
 );
 
-export default AboutComponent;
+export default About;

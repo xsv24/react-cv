@@ -5,7 +5,7 @@ import { ReactComponent as Linkedin } from '../../images/linkedin.svg';
 import { ReactComponent as GitHub } from '../../images/github.svg';
 import { ReactComponent as Email } from '../../images/email.svg';
 
-const FooterComponent = props => (
+const Footer = props => (
 	<footer>
 		<a href='https://www.linkedin.com/in/thomas-pearson-4180b8138/' target='_blank' rel="noopener noreferrer" title='Linkedin'>
 			<Linkedin />
@@ -19,4 +19,4 @@ const FooterComponent = props => (
 	</footer>
 );
 
-export default FooterComponent;
+export default Footer;
