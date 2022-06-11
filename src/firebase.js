@@ -1,19 +1,17 @@
-import { initializeApp, database } from 'firebase';
+import { initializeApp } from 'firebase/app';
+import { getDatabase, ref, child, get } from 'firebase/database';
 
 const onSuccess = snap => snap.val();
 
 const onError = err => console.error(err);
 
 export function firebase(config){
-    initializeApp(config);
-    
-    const db = new database();
+    const app = initializeApp(config);
+    const db = ref(getDatabase(app, config.databaseURL));
 
     function once(name, callback=onSuccess, errCallback=onError){
         try {
-            const childref = db.ref().child(name)
-            
-            return childref.once('value')
+            return get(child(db, name))
                 .then(callback)
                 .catch(errCallback);
         
@@ -26,14 +24,15 @@ export function firebase(config){
         return once('experience');
     }
     
-    function getSkills(){
+    async function getSkills(){
         // concat skills for now split up into different sections later
-        return Promise.all([
+        const res = await Promise.all([
             once('skills'),
             once('concepts'),
             once('platforms'),
             once('frameworks')
-        ]).then(res => res.reduce((prev, next) => prev.concat(next), []));
+        ]);
+        return res.reduce((prev, next) => prev.concat(next), []);
     }
 
     return {

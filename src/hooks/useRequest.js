@@ -1,12 +1,12 @@
 import { useReducer, useEffect } from 'react';
 
 export const types = {
-	"REQUEST": `REQUEST`,
-	"SUCCESS": `SUCCESS`,
-	"FAIL": `FAIL`
+	REQUEST: `REQUEST`,
+	SUCCESS: `SUCCESS`,
+	FAIL: `FAIL`
 };
 
-export function fetchReducer(state, action) {
+export const fetchReducer = (state, action) => {
 	switch(action.type){
 		case types.REQUEST:
 			return {
@@ -60,16 +60,14 @@ const useRequest = ({
 				dispatch({ type: types.SUCCESS, payload: res });
 			})
 			.catch(err => {
+				console.error('An error occured on attempting to load a request.');
 				onFail && onFail(err);
 				dispatch({ type: types.ERROR, payload: err });
             });
             
 	}, [state.loading]);
 
-	return [
-		state,
-		dispatch
-	];
+	return [state, dispatch];
 };
 
 export default useRequest;

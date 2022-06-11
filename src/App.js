@@ -2,7 +2,7 @@ import React from 'react';
 import config from './config';
 import { firebase } from './firebase';
 
-import Loading from './components/loading/Loading';
+import Loading from './components/loading/loading';
 import useRequest from './hooks/useRequest';
 
 import AboutComponent from './components/about/About';
@@ -29,8 +29,7 @@ const App = props => {
 
 	return (
 		<div className='App'>
-			<Loading loading={isLoading} />
-			{!isLoading &&
+			<Loading loading={isLoading}>
 				<>
 					<ShowcaseComponent />
 					<AboutComponent />
@@ -38,7 +37,7 @@ const App = props => {
 					<ExperienceComponent exps={exps.values} /> 
 					<FooterComponent />
 				</>
-			}
+			</Loading>
 		</div>
 	);
 }
