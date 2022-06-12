@@ -1,6 +1,7 @@
 import React from "react";
 import TerminalText from '../terminal-text/TerminalText';
 import "./about.scss";
+import photo from '../../images/me.png';
 
 const About = props => (
   <div className="container">
@@ -30,7 +31,7 @@ const About = props => (
       </div>
 
       <div className="about_img">
-        <img src="/images/me.png" alt="Me" />
+        <img src={photo} alt="Me" />
       </div>
 
       <div className="about_item">

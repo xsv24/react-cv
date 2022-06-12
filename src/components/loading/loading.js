@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./loading.scss";
 
-const Loading = ({ loading, children }) => {
+const Loading = ({ loading }) => {
     const [faded, setFaded] = useState(false);
     
     useEffect(() => {
@@ -10,7 +10,7 @@ const Loading = ({ loading, children }) => {
         
     }, [loading]);
 
-    if(faded) return children;
+    if (faded) return null;
 
     return (
         <div className={"loading-backdrop" +  (loading ? "" : " fade")}>

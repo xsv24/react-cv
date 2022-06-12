@@ -29,7 +29,8 @@ const App = props => {
 
 	return (
 		<div className='App'>
-			<Loading loading={isLoading}>
+			<Loading loading={isLoading} />
+			{!isLoading &&
 				<>
 					<ShowcaseComponent />
 					<AboutComponent />
@@ -37,7 +38,7 @@ const App = props => {
 					<ExperienceComponent exps={exps.values} /> 
 					<FooterComponent />
 				</>
-			</Loading>
+			}
 		</div>
 	);
 }
