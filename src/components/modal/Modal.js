@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Portal from '../utils/Portal';
+import Portal from '../utils/portal';
 import { Transition } from 'react-transition-group';
 
 import './modal.scss';

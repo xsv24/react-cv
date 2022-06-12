@@ -70,7 +70,7 @@ li {
   font-weight: 300; 
 }
 
-a, .link {
+a, button.link {
   -webkit-appearance: none;
   cursor: pointer;
 
@@ -79,6 +79,8 @@ a, .link {
   border: none;
   
   color: $link-c;
+  background-color: transparent;
+
 	font-size: 0.95rem;
   font-style: italic;
   

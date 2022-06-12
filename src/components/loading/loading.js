@@ -6,14 +6,11 @@ const Loading = ({ loading }) => {
     
     useEffect(() => {
         loading && setFaded(false);
-
-        !loading && setTimeout(() => {
-            setFaded(true);
-        }, 4000);
+        !loading && setTimeout(() => setFaded(true), 4000);
         
     }, [loading]);
 
-    if(faded) return null;
+    if (faded) return null;
 
     return (
         <div className={"loading-backdrop" +  (loading ? "" : " fade")}>

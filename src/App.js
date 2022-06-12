@@ -2,7 +2,7 @@ import React from 'react';
 import config from './config';
 import { firebase } from './firebase';
 
-import Loading from './components/loading/Loading';
+import Loading from './components/loading/loading';
 import useRequest from './hooks/useRequest';
 
 import AboutComponent from './components/about/About';
