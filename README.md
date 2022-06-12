@@ -8,6 +8,12 @@ Skills and experiences shown [here](./db_schema.json) are simply imported into t
 
 In an actual application the importing / adding of data could be done via migration scripts or could be added via authenticated CRUD requests.
 
+## 👨‍🍳 Prerequisites
+
+- [node](https://nodejs.org/en/download/)
+- [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+- [firebase-tools](https://github.com/firebase/firebase-tools)
+
 ## ⌛ Install
 
 ```bash
