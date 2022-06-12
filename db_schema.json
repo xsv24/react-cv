@@ -1,0 +1,236 @@
+{
+    "concepts": [
+        {
+            "level": 5,
+            "name": "Web Development"
+        },
+        {
+            "level": 5,
+            "name": "Object Oriented Programming"
+        },
+        {
+            "level": 5,
+            "name": "Functional Programming"
+        },
+        {
+            "level": 4,
+            "name": "Test Driven Devlopment"
+        }, {
+            "level": 5,
+            "name": "Functional Programming"
+        }, {
+            "level": 5,
+            "name": "Concurrent Programming"
+        }, {
+            "level": 5,
+            "name": "Mircoservices"
+        }, {
+            "level": 5,
+            "name": "Event Driven Architecture"
+        }, {
+            "level": 5,
+            "name": "Domain Driven Design"
+        }, {
+            "level": 5,
+            "name": "Agile Scrum"
+        }
+    ],
+    "experience": [
+        {
+            "cords": {
+                "lat": 51.52799,
+                "lng": -0.109066
+            },
+            "description": "Designed and implemented solutions across many of TrueLayers products and platforms such as virtual wallets integrated into the UK's Faster Payments scheme, Integrated into the Australian CDR to allow aggregation of account data of consented end-users, implementation of a native payments SDK to simplify client on-boarding, internal developer tools for Open-telemetry, Logging, MTLS & JWT signing & encryption.",
+            "facility": "TrueLayer",
+            "fromDate": "2019/10/20",
+            "link": "https://www.truelayer.com/",
+            "location": "Clerkenwell, London, England",
+            "title": "Sofware Engineer",
+            "toDate": "Current"
+        },
+        {
+            "cords": {
+                "lat": 51.4594377,
+                "lng": -0.3081618
+            },
+            "description": "Worked closely with stakeholders to build a booking & tracking system working on many projects, such as integrating with Stripe ‘Custom Connect’ payments, implementing & releasing Android & IOS app with React Native, leading the refactoring effort to migrate to web components, creation of the Google Maps search view and  implementation of animations.",
+            "facility": "Selected Interventions",
+            "fromDate": "2018/03/20",
+            "link": "https://www.selectedinterventions.com/",
+            "location": "Richmond, London, England",
+            "title": "Full stack Web & Mobile Developer",
+            "toDate": "2019/10/20"
+        },
+        {
+            "cords": {
+                "lat": -36.7323894,
+                "lng": 174.70274110000003
+            },
+            "description": "Majoring in Computer Science and Minoring in Information Technology:   I learnt a broad spectrum of skills from business management through to software and hardware development.Through my degree I have gained a well-rounded understanding of the industry as well as the specialist skills needed to become an excellent ICT professional.",
+            "facility": "Massey University",
+            "fromDate": "2014/02/26",
+            "link": "http://www.massey.ac.nz/massey/learning/programme-course/programme.cfm?major_code=PCMSC&prog_id=93068",
+            "location": "Albany, Auckland, New Zealand",
+            "title": "Bachelor of Information Sciences",
+            "toDate": "2017/06/12"
+        },
+        {
+            "cords": {
+                "lat": -36.7323894,
+                "lng": 174.70274110000003
+            },
+            "description": "This project involved creating an Android application for sporting events allowing match scheduling at public and private venues. This application involved the following technologies and languages: Java, Android Studio, AWS (DynamoDB & Lambda) and Python. I continued working on this project after the papers completion as a paid developer, for an extra 5 months.",
+            "facility": "Massey University",
+            "fromDate": "2016/02/20",
+            "link": "http://www.massey.ac.nz/massey/learning/programme-course/course.cfm?course_code=159333&course_offering_id=1247547",
+            "location": "Albany, Auckland, New Zealand",
+            "title": "Massey University Commerical Project",
+            "toDate": "2017/06/3"
+        }, {
+            "description": "This course acted as a refresher and allowed me to further reinforce my understanding of  javascript. The course included basic topics such as primitive types, arrays, functions, classes and some more advanced topics such as immutability, closures, prototypes and more.",
+            "facility": "Udemy",
+            "fromDate": "2018/02/01",
+            "link": "https://www.udemy.com/javascript-essentials/learn/v4/overview",
+            "location": "Online",
+            "title": "JavaScript Essentials Course",
+            "toDate": "2018/02/01"
+        }, {
+            "description": "This course has allowed me to learn about the exciting new ES6 features and syntax, making code shorter and cleaner. Concepts such as arrow functions, template strings, const & let keywords, destructuring of arrays and objects, classes and more.",
+            "facility": "Udemy",
+            "fromDate": "2018/03/01",
+            "link": "https://www.udemy.com/essentials-in-javascript-es6/learn/v4/overview",
+            "location": "Online",
+            "title": "ES6 JavaScript Course",
+            "toDate": "2018/03/01"
+        }, {
+            "description": "Modern React with Redux course allowed me to fully grasp and understand React and Redux through theoretical studies and practical projects. The course covered and fully explained basic concepts of React and Redux such as components, props, state, jsx, reducers, actions, store. Some more advanced topics were also taught such as containers, middleware, React Router, Redux Form, Redux Thunk.",
+            "facility": "Udemy",
+            "fromDate": "2018/03/01",
+            "link": "https://www.udemy.com/react-redux/learn/v4/overview",
+            "location": "Online",
+            "title": "React & Redux Course",
+            "toDate": "2018/03/01"
+        }, {
+            "description": "This course explained the basic commands of sass and the concepts and syntax for variables, Inheritance, Mixins, Importing,  Lists, Maps and much more. This course has allowed me to develop and style faster within my projects.",
+            "facility": "Udemy",
+            "fromDate": "2018/03/01",
+            "link": "https://www.udemy.com/sass-workflow/learn/v4/overview",
+            "location": "Online",
+            "title": "Sass Workflow Course",
+            "toDate": "2018/03/01"
+        }
+    ],
+    "frameworks": [
+        {
+            "level": 3,
+            "name": "Express"
+        }, {
+            "level": 4,
+            "name": "Webpack"
+        }, {
+            "level": 5,
+            "name": "Redux"
+        },{
+            "level": 5,
+            "name": ".Net core"
+        },{
+            "level": 5,
+            "name": "gRPC"
+        },{
+            "level": 4,
+            "name": "RabbitMQ"
+        },{
+            "level": 4,
+            "name": "Kibana"
+        }
+    ],
+    "platforms": [
+        {
+            "level": 4,
+            "name": "AWS"
+        },
+        {
+            "level": 5,
+            "name": "Circle CI"
+        },
+        {
+            "level": 3,
+            "name": "Azure"
+        },
+        {
+            "level": 4,
+            "name": "Android"
+        },
+        {
+            "level": 5,
+            "name": "Git"
+        }, {
+            "level": 3,
+            "name": "Unity"
+        }, {
+            "level": 3,
+            "name": "Firbase"
+        }, {
+            "level": 4,
+            "name": "MongoDB"
+        },{
+            "level": 4,
+            "name": "DynamoDB"
+        }
+    ],
+    "skills": [
+        {
+            "level": 5,
+            "name": "HTML"
+        },
+        {
+            "level": 4,
+            "name": "CSS, LESS, SCSS"
+        },
+        {
+            "level": 5,
+            "name": "Javascript"
+        },
+        {
+            "level": 5,
+            "name": "React"
+        }, {
+            "level": 5,
+            "name": "React Native"
+        }, {
+            "level": 5,
+            "name": "Nodejs"
+        }, {
+            "level": 5,
+            "name": "C#"
+        }, {
+            "level": 4,
+            "name": "Rust"
+        }, {
+            "level": 3,
+            "name": "Python"
+        }, {
+            "level": 5,
+            "name": "Kotlin"
+        }, {
+            "level": 3,
+            "name": "Java"
+        }, {
+            "level": 5,
+            "name": "Docker"
+        },{
+            "level": 3,
+            "name": "Kubernetes"
+        }, {
+            "level": 5,
+            "name": "Circle CI"
+        },{ 
+            "level": 4,
+            "name": "SQL"
+        },{ 
+            "level": 4,
+            "name": "NoSQL"
+        }
+    ]
+}
